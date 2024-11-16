@@ -37,7 +37,8 @@ To get started with the bot, follow these steps:
   "timeToRestartAllAccounts": 300,
   "numberOfAccountsRunInOneTime": 100,
   "isDoTasks": true,
-  "isPlayingGames": true
+  "isPlayingGames": true,
+  "referralCode": "aWFtYWtpZD" - Your referral code, dont change it if you want to help me :)
 }
 ```
 
