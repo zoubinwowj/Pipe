@@ -32,13 +32,15 @@ To get started with the bot, follow these steps:
 
 ```json
 {
+  "referralCode": "aWFtYWtpZD",
+  "passwordsForCreateAccounts": "123456789",
+  "howManyAccountsRunInOneTimeWhenCreateAccounts": 1,
   "timeZone": "en-US",
   "delayEachAccount": [5, 8],
   "timeToRestartAllAccounts": 300,
   "numberOfAccountsRunInOneTime": 100,
   "isDoTasks": true,
-  "isPlayingGames": true,
-  "referralCode": "aWFtYWtpZD" - Your referral code, dont change it if you want to help me :)
+  "isPlayingGames": true
 }
 ```
 
@@ -70,6 +72,7 @@ socks5://user:password@host:port
 💡 Usage:
 
 > You need to `cd` to the file after extract it.
-> To run the bot, use the following command: `node bot`
+> To run the farm bot, use the following command: `node bot`
+> To run the create accounts bot, use the following command: `node create_accounts`
 
 🎇Enjoy!
