@@ -5,5 +5,8 @@
   "howManyAccountsRunInOneTime": 100,
   "referralCode": "aWFtYWtpZD",
   "passwordsForCreateAccounts": "123456789",
-  "howManyAccountsRunInOneTimeWhenCreateAccounts": 1
+  "howManyAccountsRunInOneTimeWhenCreateAccounts": 100,
+  "isSkipInvalidProxy": false,
+  "rotateProxyForAllAccounts": true,
+  "proxyRotationInterval": 2
 }
