@@ -32,15 +32,16 @@ To get started with the bot, follow these steps:
 
 ```json
 {
-  "referralCode": "aWFtYWtpZD",
-  "passwordsForCreateAccounts": "123456789",
-  "howManyAccountsRunInOneTimeWhenCreateAccounts": 1,
   "timeZone": "en-US",
   "delayEachAccount": [5, 8],
   "timeToRestartAllAccounts": 300,
-  "numberOfAccountsRunInOneTime": 100,
-  "isDoTasks": true,
-  "isPlayingGames": true
+  "howManyAccountsRunInOneTime": 100,
+  "referralCode": "aWFtYWtpZD",
+  "passwordsForCreateAccounts": "123456789",
+  "howManyAccountsRunInOneTimeWhenCreateAccounts": 100,
+  "isSkipInvalidProxy": false,
+  "rotateProxyForAllAccounts": true,
+  "proxyRotationInterval": 2
 }
 ```
 
