@@ -74,6 +74,6 @@ socks5://user:password@host:port
 
 > You need to `cd` to the file after extract it.
 > To run the farm bot, use the following command: `node bot`
-> To run the create accounts bot, use the following command: `node create_accounts`
+> To run the create accounts bot, use the following command: `node create_accounts` // create_accounts.js is for referrals to the main account.
 
 🎇Enjoy!
