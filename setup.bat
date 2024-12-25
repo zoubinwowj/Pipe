@@ -21,9 +21,8 @@ echo Current directory: %CD%
 echo Parent node_modules: %~dp0..\node_modules
 echo.
 echo 1. Install/Update Node.js Dependencies
-echo 2. Create/Edit Configuration Files
-echo 3. Run the Bot
-echo 4. Exit
+echo 2. Run the Bot
+echo 3. Exit
 echo.
 set /p choice="Enter your choice (1-3): "
 
