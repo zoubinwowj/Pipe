@@ -55,18 +55,17 @@ check_configs() {
 while true; do
     clear
     echo "============================================================================"
-    echo "    name BOT SETUP AND RUN SCRIPT"
+    echo "    Pipe network BOT SETUP AND RUN SCRIPT"
     echo "============================================================================"
     echo
     echo "Current directory: $(pwd)"
     echo "Node modules directory: $MODULES_DIR/node_modules"
     echo
     echo "1. Install/Update Node.js Dependencies"
-    echo "2. Create/Edit Configuration Files"
-    echo "3. Run the Bot"
-    echo "4. Exit"
+    echo "2. Run the Bot"
+    echo "3. Exit"
     echo
-    read -p "Enter your choice (1-4): " choice
+    read -p "Enter your choice (1-3): " choice
 
     case $choice in
         1)
@@ -79,28 +78,6 @@ while true; do
             read -p "Press Enter to continue..."
             ;;
         2)
-            clear
-            print_yellow "Setting up configuration files..."
-
-            if [ ! -f configs.json ]; then
-                create_default_configs
-                print_green "Created configs.json with default values"
-            fi
-
-            check_configs
-
-            for file in datas.txt wallets.txt proxies.txt; do
-                if [ ! -f "$file" ]; then
-                    touch "$file"
-                    print_green "Created $file"
-                fi
-            done
-
-            print_green "\nConfiguration files have been created/checked."
-            print_yellow "Please edit the files with your data before running the bot."
-            read -p "Press Enter to continue..."
-            ;;
-        3)
             clear
             print_yellow "Checking configuration before starting..."
             if ! check_configs; then
@@ -115,10 +92,10 @@ while true; do
             else
                 print_green "Using node_modules from current directory"
             fi
-            node bot
+            cd "pipe network" && node bot
             read -p "Press Enter to continue..."
             ;;
-        4)
+        3)
             print_green "Exiting..."
             exit 0
             ;;
