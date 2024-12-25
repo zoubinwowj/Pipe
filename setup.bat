@@ -1,5 +1,5 @@
 @echo off
-title name Bot
+title Pipe network Bot
 color 0A
 
 cd ..
@@ -14,7 +14,7 @@ if exist node_modules (
 :MENU
 cls
 echo =================================================================
-echo    name BOT SETUP AND RUN SCRIPT
+echo    Pipe network BOT SETUP AND RUN SCRIPT
 echo =================================================================
 echo.
 echo Current directory: %CD%
@@ -51,36 +51,6 @@ goto MENU
 
 :CONFIG
 cls
-echo Creating configuration files...
-
-if not exist configs.json (
-    echo {> configs.json
-    echo   "timeZone": "en-US",>> configs.json
-    echo   "rotateProxy": false,>> configs.json
-    echo   "skipInvalidProxy": false,>> configs.json
-    echo   "proxyRotationInterval": 2,>> configs.json
-    echo   "delayEachAccount": [5, 8],>> configs.json
-    echo   "timeToRestartAllAccounts": 300,>> configs.json
-    echo   "howManyAccountsRunInOneTime": 100,>> configs.json
-    echo   "doTasks": true,>> configs.json
-    echo   "playGames": true,>> configs.json
-    echo   "referralCode": "">> configs.json
-    echo }>> configs.json
-    echo Created configs.json
-)
-
-if not exist datas.txt (
-    type nul > datas.txt
-    echo Created datas.txt
-)
-if not exist wallets.txt (
-    type nul > wallets.txt
-    echo Created wallets.txt
-)
-if not exist proxies.txt (
-    type nul > proxies.txt
-    echo Created proxies.txt
-)
 
 echo.
 echo Configuration files have been created/checked.
@@ -97,7 +67,7 @@ if exist "..\node_modules" (
 ) else (
     echo Using node_modules from current directory
 )
-node bot
+cd "pipe network" && node bot
 pause
 goto MENU
 
