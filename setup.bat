@@ -25,12 +25,11 @@ echo 2. Create/Edit Configuration Files
 echo 3. Run the Bot
 echo 4. Exit
 echo.
-set /p choice="Enter your choice (1-4): "
+set /p choice="Enter your choice (1-3): "
 
 if "%choice%"=="1" goto INSTALL
-if "%choice%"=="2" goto CONFIG
-if "%choice%"=="3" goto RUN
-if "%choice%"=="4" goto EXIT
+if "%choice%"=="2" goto RUN
+if "%choice%"=="3" goto EXIT
 
 :INSTALL
 cls
