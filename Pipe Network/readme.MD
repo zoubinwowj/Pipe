@@ -63,7 +63,7 @@ xxx@gmail.com
 
 ### 3. `passwords.txt` 💼 - Your passwords
 
-```txt - wallet address
+```txt 
 passwords...
 passwords...
 passwords...
@@ -81,7 +81,7 @@ socks5://user:password@host:port
 💡 Usage:
 
 > You need to `cd` to the file after extract it.
-> To run the farm bot, use the following command: `node bot`
-> To run the create accounts bot, use the following command: `node create_accounts` // create_accounts.js is for referrals to the main account.
+> To run the farm bot, use the following command: `node meomundep`
+> To run the create accounts bot, use the following command: `node meomundep_create_accounts` // create_accounts.js is for referrals to the main account.
 
 🎇Enjoy!

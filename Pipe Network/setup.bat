@@ -1,5 +1,5 @@
 @echo off
-title Pipe network Bot
+title Pipe network Bot by @MeoMunDep
 color 0A
 
 cd ..
@@ -14,7 +14,7 @@ if exist node_modules (
 :MENU
 cls
 echo =================================================================
-echo    Pipe network BOT SETUP AND RUN SCRIPT
+echo    Pipe network BOT SETUP AND RUN SCRIPT by @MeoMunDep
 echo =================================================================
 echo.
 echo Current directory: %CD%
@@ -65,7 +65,7 @@ if exist "..\node_modules" (
 ) else (
     echo Using node_modules from current directory
 )
-cd "pipe network" && node bot
+node MeoMunDep
 pause
 goto MENU
 
