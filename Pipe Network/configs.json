@@ -3,7 +3,7 @@
   "delayEachAccount": [5, 8],
   "timeToRestartAllAccounts": 300,
   "howManyAccountsRunInOneTime": 100,
-  "referralCode": "aWFtYWtpZD",
+  "referralCode": "ZGlnaXRhbG",
   "passwordsForCreateAccounts": "123456789",
   "howManyAccountsRunInOneTimeWhenCreateAccounts": 100,
   "isSkipInvalidProxy": false,
